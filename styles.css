@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./IMGs/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.page {
+  display: flex;
+  gap: 25px;
+  width: 50%;
+  flex-direction: column;
+}
+
+.page input {
+  width: 150px;
+  max-width: 450px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 3px 3px 1px #171b25;
+}
+
+.page label {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.button {
+  margin-top: 15px;
+}
+.button button {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  background-color: rgb(6, 177, 6);
+  color: #ffffff;
+  border-radius: 9px;
+  cursor: pointer;
+  box-shadow: 3px 3px 1px #171b25;
+}
+
+.description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.description h3 {
+  font-size: 1.4rem;
+  color: #fbfbfb;
+}
+.description p {
+  font-size: 1rem;
+  color: #fbfbfb;
+}
+
+.containerIMG img {
+  color: #fbfbfb;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 680px) {
+  main {
+    height: 100%;
+    background-position-x: right;
+    background-position-y: center;
+    background-attachment: fixed;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .page,
+  .description {
+    width: 100%;
+    align-items: center;
+  }
+  .page {
+    padding: 25px 0;
+  }
+  .description {
+    order: 2;
+    padding-bottom: 10px;
+    height: 95vh;
+  }
+  .description h3 {
+    color: rgb(241, 31, 31);
+  }
+  .description p {
+    color: rgb(241, 31, 31);
+    font-weight: bold;
+  }
+  .containerIMG img {
+    color: rgb(241, 31, 31);
+  }
+}
+@media screen and (max-width: 316px) {
+  img {
+    width: 95%;
+    height: 95%;
+    padding-left: 8px;
+  }
+}
